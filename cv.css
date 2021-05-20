@@ -1,0 +1,47 @@
+/****************************** TAG SELECTORS *********************************/
+
+body{
+  background-color: #faf1e6;
+}
+
+h1{
+  color: #1e6f5c;
+}
+
+h2{
+  color: #289672;
+}
+
+h3{
+  color: #29bb89;
+}
+
+hr{
+  border-color: #29bb89;
+  border-style: dotted none none;
+  border-top-width: 8px;
+  margin-top: 60px;
+  width: 10%;
+}
+
+
+p{
+  color: #29bb89;
+  font-weight: bold;
+}
+
+
+/***************************** ID SELECTORS ********************************/
+#bio-div{
+  margin: auto;
+  text-align: center;
+  width: 60%;
+}
+
+#profile-picture{
+  border-radius: 50%; /*Make image round*/
+  display: block; /* margin: auto only works with block elements */
+  margin: auto;
+  margin-top: 50px;
+  width: 10%;
+}
