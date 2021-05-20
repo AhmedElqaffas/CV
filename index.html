@@ -4,26 +4,90 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="cv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Italianno" />
   <link rel="icon" href="images/favicon.ico">
   <title>Ahmed El-Qaffas 💻📱</title>
 </head>
 
 <body>
 
-  <div class="bio-section">
-    <img id='profile-picture' src="images/cv/dp.jpg" alt="Ahmed El-Qaffas">
-    <div id="bio-div">
-      <h1>Ahmed El-Qaffas</h1>
+  <div class="cv-section bio-section">
+    <div class="information-div bio-div">
+      <div class="profile-image-wrapper">
+        <img class="leading-image" src="images/cv/dp.jpg" alt="Ahmed El-Qaffas">
+      </div>
+      <h1 id="name" class="title">Ahmed El-Qaffas</h1>
       <h2>Software Engineer</h2>
-      <p>
-        I graduated from faculty of engineering, Ain Shams University.
+      <div class="contact-div">
+        <a href="https://www.linkedin.com/in/ahmed-elqaffas/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/AhmedElqaffas" class="fa fa-github" style="font-size:37px" target="_blank"></a>
+        <a href="mailto:aelqaffasL6@gmail.com" class="fa fa-email">mail</a>
+      </div>
+      <p class="description-paragraph">
         I'm Interested in software development, especially web and android
         applications. I am also passionate about AI and data science stuff 🤩
       </p>
     </div>
+    <hr>
   </div>
 
-  <hr>
+
+  <div class="cv-section skills-section">
+    <h1 class="title skills-title">Skills</h1>
+    <div class="information-div skills-div">
+      <table>
+        <tr>
+          <td class="skill-cell">
+            <img class="skill-image" src="images/cv/android.png" alt="Android development">
+            <p class="skill-description">
+              Experience with native android development technologies and patterns like:
+              <ul>
+                <li>Data Binding</li>
+                <li>Calling APIs Using Retrofit</li>
+                <li>Hilt Dependance Injection</li>
+                <li>Navigation Component</li>
+                <li>Jetpack Compose</li>
+                <li>Room</li>
+                <li>Coroutines</li>
+                <li>MVVM architecture</li>
+              </ul>
+            </p>
+          </td>
+
+          <td class="skill-cell">
+            <img class="skill-image" src="images/cv/languages.png" alt="Programming Languages">
+            <p class="skill-description">
+              Proficient in Kotlin, Java, and Python.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="skill-image-wrapper">
+            <img class="transparent-skill-image" src="images/cv/database.svg" alt="Database Models"></div>
+            <p class="skill-description">
+              Experience with both SQL and NoSQL database models.
+            </p>
+          </td>
+
+            <td>
+              <img class="skill-image" src="images/cv/test.svg" alt="Testing"></div>
+              <p class="skill-description">
+                Experience with JUnit, Espresso, TestNG, pytest, and Selenium Webdriver.
+              </p>
+            </td>
+
+        </tr>
+      </table>
+
+
+    </div>
+
+    <hr>
+  </div>
+
 </body>
 
 </html>
