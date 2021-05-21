@@ -25,7 +25,7 @@ hr{
   margin-top: 5%;
   width: 5%;
   opacity: 50%;
-  margin-bottom: 0%;
+  margin-bottom: 0;
 }
 
 p{
@@ -38,18 +38,8 @@ ul{
   color: #29bb89;
   font-weight: bold;
   text-align: left;
-  margin-left: 15%;
 }
 
-table{
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 20px;
-}
-
-td{
-  padding-top: 50px;
-}
 
 
 /***************************** ID SELECTORS ********************************/
@@ -74,6 +64,10 @@ td{
 .description-paragraph{
   margin: 10% auto;
   width: 60%;
+}
+
+.even-row-image{
+  float: right;
 }
 
 .fa{
@@ -111,6 +105,11 @@ td{
 }
 
 
+.odd-row-image{
+  float: left;
+}
+
+
 .profile-image-wrapper{
   margin: 0 auto;
   width: 20%;
@@ -121,23 +120,35 @@ td{
 }
 
 
-.skill-cell{
-  vertical-align: top;
-  width: 50%;
+.skill-row{
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  vertical-align: middle;
+  overflow: auto; /* Wrap content height even when 'float' is used*/
 }
-
 
 .skills-div{
   width: 100%;
 }
 
 .skill-description{
-  margin-top: 50px;
-  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.even-row-skill-description{
+  right: 30%;
+}
+
+.odd-row-skill-description{
+  left: 30%;
 }
 
 .skill-image{
-  width: 30%;
+  width: 25%;
   border-radius: 50%;
 }
 
@@ -148,9 +159,9 @@ td{
 .skill-image-wrapper{
   width: 20%;
   border-radius: 50%;
-  background-color: white;
+  background-color: #29bb89;
   margin: 0 auto;
-  padding: 5%
+  padding: 3%
 }
 
 
