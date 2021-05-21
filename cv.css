@@ -3,8 +3,8 @@
 body{
   background-color: white;
   font-family: "Open Sans";
-  padding: 0 0 10px;
   margin: 0;
+  padding: 0 0 10px;
 }
 
 h1{
@@ -25,9 +25,9 @@ hr{
   border-top-width: 10px;
   left: 47%;
   margin-top: 5%;
-  width: 5%;
-  opacity: 50%;
   margin-bottom: 0;
+  opacity: 50%;
+  width: 5%;
 }
 
 p{
@@ -53,9 +53,9 @@ ul{
 
 .bio-section{
   background-image: url("images/cv/hand_shaking.png");
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: 35%;
-  background-position: right center;
   margin-top: 3%;
 }
 
@@ -72,12 +72,16 @@ ul{
   float: right;
 }
 
+.even-row-description{
+  right: 30%;
+}
+
 .fa{
-  padding: 8px 10px;
+  border-radius: 20%;
   font-size: 2rem; /* 1 rem = 16 px */
+  padding: 8px 10px;
   text-align: center;
   text-decoration: none;
-  border-radius: 20%;
   vertical-align: middle;
 }
 
@@ -97,50 +101,50 @@ ul{
 
 .gears{
   position: absolute;
-  width: 10%;
+  width: 10vw;
 }
 
 .gears-top-left-icon{
   left: -5%;
-  top: -5vw;
 }
 
 .gears-top-right-icon{
   right: -5%;
-  top: -5vw;
 }
 
 .gears-bottom-left-icon{
+  bottom: 0;
   left: -5%;
-  bottom: -5vw;
 }
 
 .gears-bottom-right-icon{
+  bottom: 0;
   right: -5%;
-  bottom: -5vw;
-}
-
-.gears-bottom-right-icon{
-  right: -5%;
-  bottom: -5vw;
 }
 
 .gears-middle-left-icon{
   width: 5%;
   left: 25vw;
-  top: 10vh;
+  top: calc(0.2*50vh);
 }
 
 .gears-middle-right-icon{
-  width: 5%;
   right: 25vw;
-  top: 20vh;
+  top: calc(0.6 * 50vh);
+  width: 5%;
 }
 
 .information-div{
-  text-align: center;
   align-content: center;
+  text-align: center;
   width: 60%;
+}
+
+.item-row{
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  overflow: auto;
 }
 
 .leading-image{
@@ -153,24 +157,28 @@ ul{
   float: left;
 }
 
+.odd-row-description{
+  left: 30%;
+}
+
 .projects-banner{
   display: flex;
-  background-color: #faf1e6;
-  height: 300px;
+  height: 50vh;
+  margin-top: 50px;
   overflow: hidden;
   position: relative;
   text-align: center;
   vertical-align: middle;
 }
 
-.project-image{
-  width: 25%;
-  border-radius: 10%;
+.projects-div{
+  margin-top: 50px;
+  width: 100%;
 }
 
-.projects-div{
-  width: 100%;
-  margin-top: 50px;
+.project-image{
+  border-radius: 10%;
+  width: 25%;
 }
 
 .profile-image-wrapper{
@@ -179,13 +187,14 @@ ul{
 }
 
 .projects-title{
+  font-family: "Reggae One";
+  font-size: 8vw;
   margin: auto;
-  font-size: 5em;
 }
 
 .project-title{
   color: #1eae98;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -195,21 +204,9 @@ ul{
   color: red;
 }
 
-.skills-section{
-  background-color: white;
-}
-
-
-.skill-row{
-  margin: 0 auto;
-  position: relative;
-  width: 80%;
-  vertical-align: middle;
-  overflow: auto; /* Wrap content height even when 'float' is used*/
-}
-
 .skills-div{
   width: 100%;
+  margin-top: 50px;
 }
 
 .skill-description{
@@ -219,21 +216,9 @@ ul{
   transform: translate(0%, -50%);
 }
 
-.even-row-skill-description{
-  right: 30%;
-}
-
-.odd-row-skill-description{
-  left: 30%;
-}
-
 .skill-image{
   width: 25%;
   border-radius: 50%;
-}
-
-.transparent-skill-image{
-    width: 100%;
 }
 
 .skill-image-wrapper{
@@ -244,14 +229,16 @@ ul{
   padding: 3%
 }
 
-
 .skills-title{
   transform: rotate(-45deg);
   display: inline-block;
   margin: 8% auto auto 5%;
 }
 
-
 .title{
   font-size: 3.5rem;
+}
+
+.transparent-skill-image{
+    width: 100%;
 }
