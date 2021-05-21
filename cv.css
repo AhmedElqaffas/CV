@@ -33,20 +33,27 @@ hr{
 p{
   color: #29bb89;
   font-weight: bold;
+  font-size: calc((1vw) + (1vh));
   text-align: justify;
 }
 
 ul{
   color: #29bb89;
+  font-size: calc((0.8vw) + (0.8vh));
   font-weight: bold;
   text-align: left;
 }
 
 
-
 /***************************** ID SELECTORS ********************************/
+#android-skill{
+  height: 100%;
+}
+
 #name{
   font-family: Italianno;
+  margin-top: 3vh;
+  margin-bottom: 0;
 }
 
 /***************************** CLASS SELECTORS ********************************/
@@ -64,7 +71,7 @@ ul{
 }
 
 .description-paragraph{
-  margin: 10% auto;
+  margin: 5vh auto;
   width: 60%;
 }
 
@@ -78,7 +85,7 @@ ul{
 
 .fa{
   border-radius: 20%;
-  font-size: 2rem; /* 1 rem = 16 px */
+  font-size: 6vw;
   padding: 8px 10px;
   text-align: center;
   text-decoration: none;
@@ -101,7 +108,7 @@ ul{
 
 .gears{
   position: absolute;
-  width: 10vw;
+  width: 9vw;
 }
 
 .gears-top-left-icon{
@@ -125,12 +132,12 @@ ul{
 .gears-middle-left-icon{
   width: 5%;
   left: 25vw;
-  top: calc(0.2*50vh);
+  top: calc(0.2*40vh);
 }
 
 .gears-middle-right-icon{
   right: 25vw;
-  top: calc(0.6 * 50vh);
+  top: calc(0.6 * 40vh);
   width: 5%;
 }
 
@@ -140,9 +147,17 @@ ul{
   width: 60%;
 }
 
+.item-description{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
 .item-row{
   margin: 0 auto;
   position: relative;
+  vertical-align: middle;
   width: 80%;
   overflow: auto;
 }
@@ -163,7 +178,7 @@ ul{
 
 .projects-banner{
   display: flex;
-  height: 50vh;
+  height: 40vh;
   margin-top: 50px;
   overflow: hidden;
   position: relative;
@@ -188,57 +203,54 @@ ul{
 
 .projects-title{
   font-family: "Reggae One";
-  font-size: 8vw;
+  font-size: 7vw;
   margin: auto;
 }
 
 .project-title{
   color: #1eae98;
-  font-size: 3rem;
+  font-size: 4vw;
   font-weight: bold;
   text-decoration: none;
 }
-
 
 .project-title:hover{
   color: red;
 }
 
 .skills-div{
-  width: 100%;
   margin-top: 50px;
-}
-
-.skill-description{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
+  width: 100%;
 }
 
 .skill-image{
-  width: 25%;
   border-radius: 50%;
+  height: 12vw;
+  width: 12vw;
 }
 
 .skill-image-wrapper{
-  width: 20%;
   border-radius: 50%;
   background-color: #29bb89;
-  margin: 0 auto;
-  padding: 3%
+  margin: auto;
+  padding: 2vw;
+  width: 9vw;
+}
+
+.skills-section{
+  background-color: #e4efe7;
 }
 
 .skills-title{
-  transform: rotate(-45deg);
   display: inline-block;
-  margin: 8% auto auto 5%;
+  margin: 10vh auto auto 5vh;
+  transform: rotate(-45deg);
 }
 
 .title{
-  font-size: 3.5rem;
+  font-size: 6vw;
 }
 
 .transparent-skill-image{
-    width: 100%;
+  width: 100%;
 }
